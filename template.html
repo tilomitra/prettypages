@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Github Pages Template</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+
+    <!-- Normalize -->
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.9.0pr3/build/cssnormalize/cssnormalize-min.css">
+
+    <!-- Responsive Grids -->
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.9.0/build/cssgrids-responsive/cssgrids-responsive-min.css">
+
+    <!-- CSSButton -->
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.9.0/build/cssbutton/cssbutton-min.css">
+    
+    <!-- CSSList -->
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallerycss-csslist/gallerycss-csslist-min.css">
+
+    <!-- CSSForm -->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallerycss-cssform/gallerycss-cssform-min.css">
+
+    <!--CSSTable-->
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallerycss-csstable/gallerycss-csstable-min.css">
+
+    <!-- Some custom styles to make things pretty. -->
+    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/prettypages/master/ui.css">
+
+</head>
+
+<body class='yui3-skin-sam'>
+
+    <div id="headerMenu" class="yui3-menu yui3-menu-open yui3-menu-horizontal yui3-menu-fixed">
+        <ul>
+            <li><a href="http://tilomitra.github.com/cssforms/">Forms</a></li>
+            <li><a href="http://tilomitra.github.com/csstables/">Tables</a></li>
+            <li><a href="http://tilomitra.github.com/csslist/">Lists</a></li>
+            <li class="yui3-menu-active"><a href="http://tilomitra.github.com/cssextras/">Extras</a></li>
+        </ul>
+    </div>
+    <div class="header y-u-1">
+
+        <h1 class="yui3-u-1">YUI3 CSS Extras</h1>
+        <h2 class="yui3-u">Simple styling for images, thumbnails, code, badges, contextual menus, alerts</h2>
+
+    </div>
+    <div class="content">
+        <h2>First, include it on your page</h2>
+
+        <p>Add the CSS on your page:</p>
+
+<code>
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://yui.yahooapis.com/gallery-2013.01.09-23-24/build/gallerycss-cssextras/gallerycss-cssextras.css&quot;&gt;
+</code>
+
+        <p>Optionally, you can load it through the <code>YUI().use()</code>:</p>
+
+<pre>
+  YUI({
+    //specify a gallery build
+    gallery: 'gallery-2013.01.09-23-24'
+  }).use(gallerycss-cssextras', function(Y) {
+    Y.log('YUI Loaded');
+  });
+</pre>
+
+        <h2>Images</h2>
+        <p>
+            Styling of three different types are available for images, eliptical, rounded, bordered.
+            To use them, just add one of these classes to the <code>&lt;img&gt;</code> tag
+        </p>
+
+        <h3>A sub-heading</h3>
+
+        <p>
+            Use H3 for subheadings!
+        </p>
+
+
+
+        <!-- TYPEKIT -->
+        <script type="text/javascript" src="//use.typekit.net/ajf8ggy.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    </div>
+</body>
+</html>
