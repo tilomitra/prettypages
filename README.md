@@ -13,3 +13,7 @@ Demo
 Check out a demo [here](http://tilomitra.github.io/prettypages) and a live project using it [here](http://tilomitra.github.io/tipsy).
 ![Demo](http://f.cl.ly/items/2t2U3M3h3Z2O020E3b14/Screen%20Shot%202013-04-10%20at%2011.50.39%20AM.png)
 
+Contribute
+----------
+
+Got other nice looking templates for Github Pages? Send pull requests!
