@@ -4,10 +4,26 @@ body {
     
 }
 
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: sans-serif;
+    font-weight: 300;
+}
+h3 {
+    font-weight: bold;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
 .header {
      min-height: 80px;
      margin: 0;
-     color:#fff;
      padding: 50px 20px 30px;
      text-align: center;
      border-bottom:1px solid #eee;
@@ -15,17 +31,13 @@ body {
     .header h1 {
         margin: 0.2em 0;
         font-size:3em;
-        color: white;
     }
      .header h2 {
          font-weight:300;
          margin:0;
      }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: sans-serif;
-    font-weight: 300;
-}
+
 .content {
     margin: 0 auto;
     width: 70%;
@@ -44,10 +56,14 @@ h1,h2,h3,h4,h5,h6 {
         margin:50px 0 20px 0;
         font-weight:bold;
     }
-    .content code {
-        /* even though we have nowrap, for long lines like gallery, it's better to wrap. especially on smaller screens. */
-        white-space: normal;
-        line-height:2em;
+    .content .primary-button {
+        color: rgb(34, 121, 48);
+        background: rgb(64, 189, 41);
+        font-size: 130%;
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+
     }
 
 
@@ -55,6 +71,7 @@ h1,h2,h3,h4,h5,h6 {
 #headerMenu {
     background: #111;
     color: #fff;
+    border-bottom: none;
 }
 
     #headerMenu a:hover {
@@ -70,6 +87,15 @@ h1,h2,h3,h4,h5,h6 {
         background: #222;
     }
 
+    .content code {
+        font-size: 75%;
+        padding: 0.4em 0.6em;
+    }
+
+    .content pre code {
+        font-size: inherit;
+    }
+
 
 .gist {
     margin-top:25px;
@@ -78,8 +104,7 @@ h1,h2,h3,h4,h5,h6 {
     content: "Code:";
     margin-bottom: 10px;
     display: block; 
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
-                 "Helvetica Neue", sans-serif;
+    font-family: sans-serif;
     font-weight: 300;
 }
 
@@ -89,7 +114,12 @@ h1,h2,h3,h4,h5,h6 {
     #headerMenu {
         position: relative;
     }
+    #headerMenu .yui3-menu-heading {
+        text-align: center;
+        display: block;
+    }
     #headerMenu ul {
+        display: block;
         text-align: center;
     }
     #headerMenu a {

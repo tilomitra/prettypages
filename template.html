@@ -24,63 +24,94 @@
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallerycss-csstable/gallerycss-csstable-min.css">
 
     <!-- Some custom styles to make things pretty. -->
-    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/prettypages/master/ui.css">
+    <link rel="stylesheet" type="text/css" href="ui.css">
+
+    <!-- RainbowJS Syntax Highlighting - Github Theme. 
+         For more themes, go to https://github.com/ccampbell/rainbow/tree/master/themes -->
+    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/ccampbell/rainbow/master/themes/github.css">
+
+    <!-- Modify header colors here to customize the look and feel of the site-->
+    <style>
+        
+        .header {
+            background: rgb(53, 41, 116);
+         }
+            .header h1 {
+                color: white;
+            }
+             .header h2 {
+                 font-weight:300;
+                 margin:0;
+                 color: rgb(116, 130, 230);
+             }
+    </style>
 
 </head>
 
 <body class='yui3-skin-sam'>
 
     <div id="headerMenu" class="yui3-menu yui3-menu-open yui3-menu-horizontal yui3-menu-fixed">
+        <span class="yui3-menu-heading">PrettyPages</span>
         <ul>
-            <li><a href="http://tilomitra.github.com/cssforms/">Forms</a></li>
-            <li><a href="http://tilomitra.github.com/csstables/">Tables</a></li>
-            <li><a href="http://tilomitra.github.com/csslist/">Lists</a></li>
-            <li class="yui3-menu-active"><a href="http://tilomitra.github.com/cssextras/">Extras</a></li>
+            <li class="yui3-menu-active"><a href="http://tilomitra.github.com/cssforms/">Documentation</a></li>
+            <li><a href="http://github.com/tilomitra/prettypages/">Fork on Github</a></li>
+            <li><a href="http://github.com/tilomitra/">Other Projects</a></li>
         </ul>
     </div>
     <div class="header y-u-1">
 
-        <h1 class="yui3-u-1">YUI3 CSS Extras</h1>
-        <h2 class="yui3-u">Simple styling for images, thumbnails, code, badges, contextual menus, alerts</h2>
+        <h1 class="yui3-u-1">Pretty Pages</h1>
+        <h2 class="yui3-u">A pretty Github Pages template</h2>
 
     </div>
     <div class="content">
-        <h2>First, include it on your page</h2>
+        <h2>Get Started</h2>
+        <p><a href="http://github.com/tilomitra/prettypages/">PrettyPages</a> is just an HTML template that makes it easy for you to create nice looking Github Pages for your projects. This page was created using PrettyPages. </p>
 
-        <p>Add the CSS on your page:</p>
+        <a href="http://github.com/tilomitra/prettypages/" class="yui3-button primary-button">Use it for your next project.</a>
 
-<code>
-  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://yui.yahooapis.com/gallery-2013.01.09-23-24/build/gallerycss-cssextras/gallerycss-cssextras.css&quot;&gt;
-</code>
+        <h2>About</h2>
+        
+        <p>PrettyPages comes with a flat horizontal menu, where you can place links, and add the title of your project. This menu is responsive at lower screen sizes.</p>
 
-        <p>Optionally, you can load it through the <code>YUI().use()</code>:</p>
+        <p>You can also add pretty code snippets that have syntax highlighting thanks to <a href="http://craig.is/making/rainbows">RainbowJS</a>! These come in a variety of different <a href="https://github.com/ccampbell/rainbow/tree/master/themes">themes</a>.</p>
 
-<pre>
-  YUI({
-    //specify a gallery build
-    gallery: 'gallery-2013.01.09-23-24'
-  }).use(gallerycss-cssextras', function(Y) {
-    Y.log('YUI Loaded');
-  });
-</pre>
+<pre><code data-language="javascript">
+    YUI({
+      //specify a gallery build
+      gallery: 'gallery-2013.01.09-23-24'
+    }).use(gallerycss-cssextras', function(Y) {
+      Y.log('YUI Loaded');
+    });
 
-        <h2>Images</h2>
+</code></pre>
+
+        <p>You can also display nice looking buttons thanks to YUI's CSSButton module. Add the <code>.yui3-button</code> class to a <code>a</code> element to make a nice looking button, and add the <code>primary-button</code> class to make a really big callout button.</p>
+
+        <a class="yui3-button">I'm a regular button</a>
+        <a class="yui3-button primary-button">I'm a primary button</a>
+
+
+        <h2>More Content</h2>
         <p>
-            Styling of three different types are available for images, eliptical, rounded, bordered.
-            To use them, just add one of these classes to the <code>&lt;img&gt;</code> tag
+            In general, all your content should be placed inside a <code>div class="content"</code>. You can use <code>code</code> elements to highlight inline-code. If you want sub-headings, those are nicely styled too. 
         </p>
 
         <h3>A sub-heading</h3>
 
         <p>
-            Use H3 for subheadings!
+            Use <code>h3</code> for subheadings! If you want something smaller, you can go for an <code>h4</code>.
         </p>
 
+        <h4>A sub-sub heading</h4>
+        <p>That's what an <code>h4</code> looks like.</p>
 
 
         <!-- TYPEKIT -->
         <script type="text/javascript" src="//use.typekit.net/ajf8ggy.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script src="https://rawgithub.com/ccampbell/rainbow/master/js/rainbow.min.js"></script>
+        <script src="https://rawgithub.com/ccampbell/rainbow/master/js/language/generic.js"></script>
     </div>
 </body>
 </html>
